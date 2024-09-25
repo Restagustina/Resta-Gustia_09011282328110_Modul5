@@ -96,7 +96,7 @@ kemudian gunakan opsi – sebagai berikut :
 
 Jelaskan perbedaan kedua utilitas tersebut.
 
-= Perbedaannya adalah jika menggunakan perintah su mahasiswa, hanya identitas pengguna yang berubah sementara lingkungan (environment) dari pengguna sebelumnya tetap dipertahankan. Sebaliknya, perintah su - mahasiswa melakukan login baru sepenuhnya, termasuk memuat ulang seluruh lingkungan pengguna baru dari awal.
+Perintah `su mahasiswa` memungkinkan pengguna beralih ke akun "mahasiswa" tanpa mengubah lingkungan shell, sehingga variabel seperti `PATH` tetap sama dan tidak ada pengaturan khusus yang diterapkan. Sebaliknya, `su - mahasiswa` beralih ke akun "mahasiswa" dan memuat lingkungan login pengguna tersebut, mengubah semua variabel lingkungan sesuai dengan pengaturan pengguna "mahasiswa". Dengan demikian, pengguna sepenuhnya berada dalam konteks pengguna "mahasiswa" saat menggunakan perintah kedua.
 
 
 
